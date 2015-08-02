@@ -82,7 +82,7 @@ config = {
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: process.env.PORT
         },
-        forceAdminSSL: true
+        forceAdminSSL: false
     },
 
     // **Developers only need to edit below here**
