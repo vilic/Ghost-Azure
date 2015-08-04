@@ -36,8 +36,13 @@ pre[class*="language-"],
 pre[class*="language-"] {
 	border-radius: .5em;
 	margin: .5em 0;
+    padding: 0;
 	overflow: auto;
-	padding: 1em;
+}
+
+pre[class*="language-"] > code {
+    display: inline-block;
+    padding: 0.8em;
 }
 
 pre[class*="language-"]::selection {
@@ -135,7 +140,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 }
 
 pre[data-line] {
-	padding: 1em 0 1em 3em;
+	padding: 0.8em 0 0.8em 3em;
 	position: relative;
 }
 
