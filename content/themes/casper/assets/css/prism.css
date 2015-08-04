@@ -6,11 +6,11 @@
  */
 code[class*="language-"],
 pre[class*="language-"] {
-	color: white;
+	color: #ddd;
 	direction: ltr;
+    font-size: 14px;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
-	text-shadow: 0 -.1em .2em black;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
@@ -34,8 +34,6 @@ pre[class*="language-"],
 /* Code blocks */
 pre[class*="language-"] {
 	border-radius: .5em;
-	border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
-	box-shadow: 1px 1px .5em black inset;
 	margin: .5em 0;
 	overflow: auto;
 	padding: 1em;
@@ -54,13 +52,11 @@ pre[class*="language-"]::selection {
 /* Text Selection colour */
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
 	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
 	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
 }
 
@@ -68,7 +64,6 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 :not(pre) > code[class*="language-"] {
 	border-radius: .3em;
 	border: .13em solid hsl(0, 0%, 33%); /* #545454 */
-	box-shadow: 1px 1px .3em -.1em black inset;
 	padding: .15em .2em .05em;
 }
 
@@ -179,7 +174,6 @@ pre[data-line] {
 .line-highlight[data-end]:after {
 	background-color: hsl(215, 15%, 59%); /* #8794A6 */
 	border-radius: 999px;
-	box-shadow: 0 1px white;
 	color: hsl(24, 20%, 95%); /* #F5F2F0 */
 	content: attr(data-start);
 	font: bold 65%/1.5 sans-serif;
@@ -188,7 +182,6 @@ pre[data-line] {
 	padding: 0 .5em;
 	position: absolute;
 	text-align: center;
-	text-shadow: none;
 	top: .4em;
 	vertical-align: .3em;
 }
