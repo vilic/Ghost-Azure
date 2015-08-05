@@ -42,7 +42,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"] > code {
     display: inline-block;
-    padding: 0.8em;
+    padding: 10px 12px;
 }
 
 pre[class*="language-"]::selection {
