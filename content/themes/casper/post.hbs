@@ -74,6 +74,17 @@
 
         </footer>
 
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'vanelife';
+            var disqus_identifier = '{{post.id}}';
+        
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
     </article>
 </main>
 
@@ -95,17 +106,4 @@
     </a>
     {{/prev_post}}
 </aside>
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'vanelife';
-    var disqus_identifier = '{{post.id}}';
- 
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-
 {{/post}}
